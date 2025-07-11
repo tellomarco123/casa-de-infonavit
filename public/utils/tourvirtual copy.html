@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, shrink-to-fit=no">
+    <title>Panolens.js panorama linking</title>
+    <style>
+      html, body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #000;
+      }
+
+      a:link, a:visited{
+        color: #bdc3c7;
+      }
+
+      .panolens-infospot {
+          cursor: pointer;
+      }
+
+      .panolens-infospot:hover {
+        color: #00aaff;
+      }
+      .
+
+      .credit{
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        padding: 20px 0;
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+    <!-- <div class="credit"><a href="https://github.com/pchen66/panolens.js">Panolens.js</a> panorama linking example. 360 Video from <a href="http://worldoftanks.com/">World of Tanks</a>. Image from <a href="http://adaptivesamples.com/tag/equirectangular/">Adaptive Samples</a> and Google Streetview API</div> -->
+    <script src="/casa-de-infonavit/public/js/three/three.min.js"></script>
+    <script src="/casa-de-infonavit/public/js/panolens/panolens.min.js"></script>
+    <script>
+
+      const esp32_ip = '192.168.1.100'; // <-- IMPORTANTE: Reemplaza con la IP de tu ESP32
+      const panorama = new PANOLENS.ImagePanorama('/casa-de-infonavit/public/image/uno.png');
+      const viewer = new PANOLENS.Viewer({ output: 'console' });
+const panorama2 = new PANOLENS.ImagePanorama('/casa-de-infonavit/public/image/dos.png');
+const panorama3 = new PANOLENS.ImagePanorama('/casa-de-infonavit/public/image/tres.png');
+const panorama4 = new PANOLENS.ImagePanorama('/casa-de-infonavit/public/image/cuatro.png');
+
+      // --- Lógica de Control Domótico ---
+      const deviceStatus = {}; // Objeto para rastrear el estado
+
+      function createControlInfospot(position, deviceName, onCommand, offCommand) {
+          const spot = new PANOLENS.Infospot(300, PANOLENS.DataImage.Info);
+          spot.position.set(position.x, position.y, position.z);
+          deviceStatus[deviceName] = false; // Estado inicial: apagado
+
+          spot.addEventListener('click', function() {
+              deviceStatus[deviceName] = !deviceStatus[deviceName];
+              const isActive = deviceStatus[deviceName];
+              const command = isActive ? onCommand : offCommand;
+
+              fetch(`http://${esp32_ip}/${command}`)
+                  .then(response => response.text())
+                  .then(data => {
+                      console.log(`${deviceName}: ${data}`);
+                      // Cambiar apariencia para dar feedback visual
+                      spot.material.color.set(isActive ? 0x00ff00 : 0xffffff); // Verde si está activo, blanco si no
+                  })
+                  .catch(error => {
+                      console.error('Error:', error);
+                      alert(`No se pudo conectar con el dispositivo: ${deviceName}`);
+                      deviceStatus[deviceName] = !isActive; // Revertir estado
+                  });
+          });
+
+          panorama.add(spot);
+      }
+
+      // --- Definición de Puntos de Control (Infospots) ---
+      // Reemplaza las coordenadas con la ubicación real en tu panorama
+      createControlInfospot({x: -4800, y: -1200, z: 1000}, 'Luz Cocina', 'encender_cocina', 'apagar_cocina');
+      createControlInfospot({x: 4900, y: -800, z: -500}, 'Luz Recamara', 'encender_recamara', 'apagar_recamara');
+      createControlInfospot({x: 2000, y: -1500, z: -4500}, 'Luz Sanitario', 'encender_sanitario', 'apagar_sanitario');
+      createControlInfospot({x: -1500, y: -1000, z: 4800}, 'Puerta Principal', 'abrir_puerta', 'cerrar_puerta');
+      createControlInfospot({x: -4000, y: -1800, z: -2500}, 'Extractor', 'iniciar_extractor', 'detener_extractor');
+
+      viewer.add(panorama);
+
+    </script>
+
+  </body>
+</html>
