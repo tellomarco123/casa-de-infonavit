@@ -875,15 +875,6 @@
       document.addEventListener('alpine:init', () => {
         Alpine.data('teamCarousel', () => ({
           isOpen: false,
-          selectedMember: {
-            name: '',
-            position: '',
-            email: '',
-            phone: '',
-            bio: '',
-            skills: [],
-            experience: []
-          },
           teamMembers: [{
               name: 'Dara Xolalpa Hernandez',
               position: 'Diseñadora UX/UI',
@@ -904,7 +895,7 @@
               position: 'Gestor de documentacion',
               email: 'edwin1020@gmail.com',
               phone: '+52 55 3233 4454',
-              image: 'public/image/ourt/edwin.webp',
+              image: 'public/image/imageneswebp/edwin.webp',
               shortBio: 'Especialista en documentacion.',
               bio: 'Edwin es especialista en la creacion y manejo de la documentacion.',
               skills: ['Node.js', 'Bases de Datos', 'API REST', 'Microservicios'],
