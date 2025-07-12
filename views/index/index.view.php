@@ -788,11 +788,11 @@
                     <div class="h-64 bg-gray-700 flex items-center justify-center">
                       <img :src="member.image" :alt="member.name" class="h-full w-full object-cover">
                     </div>
-                    <div class="p-6">
+                    <!-- <div class="p-6">
                       <h3 class="text-xl font-semibold text-white" x-text="member.name"></h3>
                       <p class="text-blue-300 mb-2" x-text="member.position"></p>
                       <p class="text-gray-400 text-sm" x-text="member.shortBio"></p>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </template>
