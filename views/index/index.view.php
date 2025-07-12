@@ -875,7 +875,8 @@
       document.addEventListener('alpine:init', () => {
         Alpine.data('teamCarousel', () => ({
           isOpen: false,
-          teamMembers: [{
+          teamMembers: [
+            {
               name: 'Dara Xolalpa Hernandez',
               position: 'Diseñadora UX/UI',
               email: 'daradxa@gmail.com',
@@ -979,7 +980,8 @@
                 company: 'Smart Homes Inc.',
                 duration: '2017 - Presente'
               }]
-            },{
+            },
+            {
               name: 'Erick Donaldo',
               position: 'Gestor de documentacion',
               email: 'donaldoerick@gmail.com',
@@ -1014,7 +1016,7 @@
               const swiper = new Swiper('.team-swiper', {
                 slidesPerView: 1,
                 spaceBetween: 20,
-                loop: true,
+                loop: false,
                 autoplay: {
                   delay: 5000,
                   disableOnInteraction: false,
