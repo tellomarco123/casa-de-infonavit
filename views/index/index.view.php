@@ -885,55 +885,55 @@
             experience: []
           },
           teamMembers: [{
-              name: 'Dara',
-              position: 'Líder del Equipo',
-              email: 'dara@example.com',
-              phone: '+52 55 1111 2222',
-              image: 'public/image/ourt/dara.jpg',
-              shortBio: 'Líder y visionaria del proyecto.',
-              bio: 'Dara es la fuerza impulsora detrás de la visión del equipo, combinando liderazgo con una profunda experiencia técnica para guiar al equipo hacia el éxito.',
-              skills: ['Liderazgo', 'Gestión de Proyectos', 'Arquitectura de Software'],
-              experience: [{
-                role: 'Líder de Proyecto',
-                company: 'Innovatech',
-                duration: '2020 - Presente'
+              name: 'Dara Xolalpa Hernandez',
+              position: 'Diseñadora UX/UI',
+              email: 'daradxa@gmail.com',
+              phone: '+52 5534569785',
+              image: 'public/image/imagenes WEBP/jocabed.webp',
+              shortBio: 'Creadora de experiencias de usuario.',
+              bio: 'Dara diseña interfaces intuitivas y atractivas, enfocándose en que la interacción del usuario con la tecnología sea simple y agradable.',
+              skills:  ['Diseño UX/UI', 'Prototipado', 'Figma', 'Adobe XD'],
+              experience: [{ 
+                role: ' Diseñadora UX/UI', 
+                company: 'Innovatech', 
+                duration: '2020 - Presente' 
               }]
             },
             {
-              name: 'Edwin',
-              position: 'Desarrollador Backend',
-              email: 'edwin@example.com',
-              phone: '+52 55 3333 4444',
+              name: 'Edwin Alejandro Ruiz',
+              position: 'Gestor de documentacion',
+              email: 'edwin1020@gmail.com',
+              phone: '+52 55 3233 4454',
               image: 'public/image/ourt/edwin.jpg',
-              shortBio: 'El arquitecto de nuestra infraestructura.',
-              bio: 'Edwin se especializa en la construcción de sistemas robustos y escalables, asegurando que toda la lógica del servidor funcione a la perfección.',
+              shortBio: 'Especialista en documentacion.',
+              bio: 'Edwin es especialista en la creacion y manejo de la documentacion.',
               skills: ['Node.js', 'Bases de Datos', 'API REST', 'Microservicios'],
               experience: [{
-                role: 'Ingeniero Backend',
+                role: 'Gestor de documentacion',
                 company: 'Data Systems',
                 duration: '2019 - Presente'
               }]
             },
             {
-              name: 'Jocabed',
+              name: 'Jocabed Xolalpa Hernandez',
               position: 'Diseñadora UX/UI',
-              email: 'jocabed@example.com',
-              phone: '+52 55 5555 6666',
-              image: 'public/image/ourt/jocabed.jpg',
+              email: 'jocabedxa@gmail.com',
+              phone: '+52 5578456809',
+              image: 'public/image/imagenes WEBP/jocabed.webp',
               shortBio: 'Creadora de experiencias de usuario.',
               bio: 'Jocabed diseña interfaces intuitivas y atractivas, enfocándose en que la interacción del usuario con la tecnología sea simple y agradable.',
-              skills: ['Diseño UX/UI', 'Prototipado', 'Figma', 'Adobe XD'],
-              experience: [{
-                role: 'Diseñadora UX/UI',
-                company: 'Creative Minds',
-                duration: '2021 - Presente'
+              skills:  ['Diseño UX/UI', 'Prototipado', 'Figma', 'Adobe XD'],
+              experience: [{ 
+                role: ' Diseñadora UX/UI', 
+                company: 'Innovatech', 
+                duration: '2020 - Presente' 
               }]
             },
             {
-              name: 'Jona',
-              position: 'Desarrollador Frontend',
-              email: 'jona@example.com',
-              phone: '+52 55 7777 8888',
+              name: 'Jonathan Jair Hernandez Gonzalez',
+              position: 'Programador',
+              email: 'jonahdz@gmail.com',
+              phone: '+52 55 3456 2345',
               image: 'public/image/ourt/jona.jpg',
               shortBio: 'El mago de la interfaz de usuario.',
               bio: 'Jona transforma los diseños en realidad, escribiendo código limpio y eficiente para crear interfaces de usuario dinámicas y responsivas.',
@@ -945,24 +945,24 @@
               }]
             },
             {
-              name: 'Laura',
-              position: 'Especialista en QA',
-              email: 'laura@example.com',
-              phone: '+52 55 9999 0000',
-              image: 'public/image/ourt/laura.jpg',
-              shortBio: 'Garantiza la calidad de nuestro software.',
-              bio: 'Laura es meticulosa en la detección de errores, asegurando que cada producto que lanzamos cumpla con los más altos estándares de calidad.',
-              skills: ['Testing Manual', 'Automatización de Pruebas', 'Selenium', 'Jira'],
+              name: 'Laura Cervantes',
+              position: 'Gestor de documentacion',
+              email: 'lauracervantes@gmail.com',
+              phone: '+52 55 3547 1234',
+              image: 'public/image/ourt/edwin.jpg',
+              shortBio: 'Especialista en documentacion.',
+              bio: 'Laura es especialista en la creacion y manejo de la documentacion.',
+              skills: ['Node.js', 'Bases de Datos', 'API REST', 'Microservicios'],
               experience: [{
-                role: 'Ingeniera de Calidad',
-                company: 'Tech Labs',
+                role: 'Gestor de documentacion',
+                company: 'Data Systems',
                 duration: '2019 - Presente'
               }]
             },
             {
-              name: 'Manny',
+              name: 'Giovanni Suarez',
               position: 'Experto en Domótica',
-              email: 'manny@example.com',
+              email: 'manny123@gmail.com',
               phone: '+52 55 1234 5678',
               image: 'public/image/ourt/manny.jpg',
               shortBio: 'El cerebro detrás de la casa inteligente.',
