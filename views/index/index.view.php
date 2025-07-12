@@ -781,7 +781,7 @@
         <!-- Carrusel -->
         <div class="relative">
           <div class="swiper team-swiper">
-            <div class="swiper-wrapper pb-8">
+            <div class="swiper-wrapper pb-10">
               <template x-for="(member, index) in teamMembers" :key="index">
                 <div class="swiper-slide">
                   <div @click="openModal(member)" class="bg-[#20262d] rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer mx-2">
