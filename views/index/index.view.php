@@ -889,7 +889,7 @@
               position: 'Diseñadora UX/UI',
               email: 'daradxa@gmail.com',
               phone: '+52 5534569785',
-              image: 'public/image/imagenes WEBP/jocabed.webp',
+              image: 'public/image/imageneswebp/dara.webp',
               shortBio: 'Creadora de experiencias de usuario.',
               bio: 'Dara diseña interfaces intuitivas y atractivas, enfocándose en que la interacción del usuario con la tecnología sea simple y agradable.',
               skills:  ['Diseño UX/UI', 'Prototipado', 'Figma', 'Adobe XD'],
@@ -919,7 +919,7 @@
               position: 'Diseñadora UX/UI',
               email: 'jocabedxa@gmail.com',
               phone: '+52 5578456809',
-              image: 'public/image/imagenes WEBP/jocabed.webp',
+              image: 'public/image/imageneswebp/jocabed.webp',
               shortBio: 'Creadora de experiencias de usuario.',
               bio: 'Jocabed diseña interfaces intuitivas y atractivas, enfocándose en que la interacción del usuario con la tecnología sea simple y agradable.',
               skills:  ['Diseño UX/UI', 'Prototipado', 'Figma', 'Adobe XD'],
@@ -934,7 +934,7 @@
               position: 'Programador',
               email: 'jonahdz@gmail.com',
               phone: '+52 55 3456 2345',
-              image: 'public/image/ourt/jona.jpg',
+              image: 'public/imageneswebp/jona.webp',
               shortBio: 'El mago de la interfaz de usuario.',
               bio: 'Jona transforma los diseños en realidad, escribiendo código limpio y eficiente para crear interfaces de usuario dinámicas y responsivas.',
               skills: ['JavaScript', 'React', 'Vue.js', 'CSS Moderno'],
@@ -949,7 +949,7 @@
               position: 'Gestor de documentacion',
               email: 'lauracervantes@gmail.com',
               phone: '+52 55 3547 1234',
-              image: 'public/image/ourt/edwin.jpg',
+              image: 'public/imageneswebp/edwin.webp',
               shortBio: 'Especialista en documentacion.',
               bio: 'Laura es especialista en la creacion y manejo de la documentacion.',
               skills: ['Node.js', 'Bases de Datos', 'API REST', 'Microservicios'],
@@ -960,13 +960,42 @@
               }]
             },
             {
-              name: 'Giovanni Suarez',
-              position: 'Experto en Domótica',
+              name: 'Jovanni Suarez',
+              position: 'Programador',
               email: 'manny123@gmail.com',
               phone: '+52 55 1234 5678',
-              image: 'public/image/ourt/manny.jpg',
+              image: 'public/imageneswebp/manny.webp',
               shortBio: 'El cerebro detrás de la casa inteligente.',
-              bio: 'Manny es el especialista en hardware y automatización del hogar, conectando el mundo físico con el digital para crear una experiencia de hogar inteligente y cohesiva.',
+              bio: 'Jovanni es el especialista en hardware y automatización del hogar, conectando el mundo físico con el digital para crear una experiencia de hogar inteligente y cohesiva.',
+              skills: ['Arduino', 'ESP32', 'IoT', 'Integración de Hardware'],
+              experience: [{
+                role: 'Especialista en IoT',
+                company: 'Smart Homes Inc.',
+                duration: '2017 - Presente'
+              }]
+            },
+            {
+              name: 'Marco Catalán',
+              position: 'Programador',
+              email: 'marcocatalan123@gmail.com',
+              phone: '+52 55 1884 5478',
+              image: 'public/imageneswebp/marco.webp',
+              shortBio: 'Desarroador de aplicacion.',
+              bio: 'Marco es el especialista en backend y DB.',
+              skills: ['Arduino', 'ESP32', 'IoT', 'Integración de Hardware'],
+              experience: [{
+                role: 'Especialista en IoT',
+                company: 'Smart Homes Inc.',
+                duration: '2017 - Presente'
+              }]
+            },{
+              name: 'Erick Donaldo',
+              position: 'Gestor de documentacion',
+              email: 'donaldoerick@gmail.com',
+              phone: '+52 55 8234 6679',
+              image: 'public/imageneswebp/Erick.webp',
+              shortBio: 'Especialista en documentacion.',
+              bio: 'Erick es especialista en la creacion y manejo de la documentacion.',
               skills: ['Arduino', 'ESP32', 'IoT', 'Integración de Hardware'],
               experience: [{
                 role: 'Especialista en IoT',
